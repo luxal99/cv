@@ -144,11 +144,44 @@
 
       @media screen and (max-width: 900px) {
       
-      body {
+      .body {
         margin:0;
+        min-width:100%;
+      }
+      .row{
+        display: block;
+      }
+      .col {
+        width: 100%;
+      }
+
+      .header .row {
+        display: inline-flex;
+      }
+
+      .header .col {
+        width: 50%;
+      }
+      .profile-image,.person-info{
+        padding: 0;
+      }
+      .header {
+        padding: 4em 6em;
       }
         h3 {
           line-height: 20px !important;
+        }
+      }
+
+      @media (-webkit-device-pixel-ratio: 1.15){
+        body{
+          zoom: .8;
+        }
+      }
+
+      @media (-webkit-device-pixel-ratio: 1.25){
+        body{
+          zoom: .6;
         }
       }
       @media (-webkit-device-pixel-ratio: 1.5){
