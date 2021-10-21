@@ -4,7 +4,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+
+
     <title>Aleksa Lukic</title>
 
     <style>
@@ -152,8 +155,7 @@
         @media screen and (max-width: 900px) {
             .body {
                 margin: 0;
-                width: auto;
-                min-width: auto;
+                width: 100%;
             }
 
             .row {
@@ -188,10 +190,19 @@
             h3 {
                 line-height: 20px !important;
             }
+            .cv-content {
+                padding: 5em;
+            }
+
+            .bio {
+                letter-spacing: 2.5px;
+                line-height: 2em;
+            }
 
         }
 
-        @media (-webkit-device-pixel-ratio: 1.15) {
+
+        @media (-webkit-device-pixel-ratio: 1.1) {
             body {
                 zoom: .8;
             }
@@ -199,7 +210,7 @@
 
         @media (-webkit-device-pixel-ratio: 1.25) {
             body {
-                zoom: .6;
+                zoom: .6;z
             }
         }
 
@@ -216,7 +227,13 @@
         }
 
 
-        @media (-webkit-min-device-pixel-ratio: 2) {
+        @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1280px) {
+            body {
+                zoom: .7;
+            }
+        }
+
+        @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px) {
             body {
                 zoom: .4;
             }
@@ -267,7 +284,7 @@
                             IT Europe for three months in the position of "cybersecurity
                             analyst". More about my project you can find on
                             <a href="https://github.com/luxal99"> Github profile </a> or
-                            on my <a href="https://alemarc.dev">website</a>. <br/>
+                            on my <a href="https://luxal.dev">website</a>. <br/>
                             When I’m not programming I like to relax with friends. In the
                             circle of friends, they consider me a person who always cheers
                             up society. Besides, I love sports, especially table tennis
@@ -486,6 +503,12 @@
                             <div class="progress-container">
                                 <div
                                         style="background-color: #ffa900; width: 65%; height: 5px"
+                                ></div>
+                            </div>
+                            <h3>Cypress</h3>
+                            <div class="progress-container">
+                                <div
+                                        style="background-color: #ffa900; width: 70%; height: 5px"
                                 ></div>
                             </div>
                         </div>
