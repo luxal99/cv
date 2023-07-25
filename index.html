@@ -39,10 +39,6 @@
             line-height: 1.5em;
         }
 
-        h2 {
-            padding: 10px;
-        }
-
         body {
             background-color: #fafafa;
         }
@@ -87,7 +83,7 @@
 
         .header {
             min-width: 50vh;
-            padding: 2em 10em 2em 10em;
+            padding: 1em 7em;
             background-size: cover;
             background-position: bottom;
             background-color: #fafafa;
@@ -110,10 +106,10 @@
 
         .profile-image {
             text-align: right !important;
-            width: 300px;
+            width: 150px;
             background-color: rgba(255, 165, 0, 0.32);
             border-radius: 50%;
-            padding: 1em;
+            padding: .5em;
         }
 
         .profile-image img {
@@ -121,26 +117,15 @@
         }
 
         .label {
-            background-color: #ffa500;
-            border-radius: 5em;
+            border-bottom: 1px solid #ffa500;
         }
 
         .profile-section {
-            margin: 2em;
+            margin: 0 2em;
         }
 
         .content {
             padding: .25em;
-        }
-
-        .progress-container {
-            background-color: #f3f3f7;
-            width: 100%;
-            height: 5px;
-        }
-
-        .bio {
-            letter-spacing: 1.5px;
         }
 
         .divider {
@@ -148,10 +133,21 @@
             height: 1px;
         }
 
-        li{
+        li {
             font-size: 18px;
         }
 
+        .technologies{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .technologies .content{
+            flex-basis: 50%;
+            padding: 0;
+        }
+        .technologies .h3-silver{
+            line-height: 20px;
+        }
     </style>
 </head>
 
@@ -160,69 +156,72 @@
     <div class="header">
         <div class="row header-row">
             <div class="col person-info">
-                <h1>Aleksa Lukić</h1>
+                <h2 style="margin: 0">Aleksa Lukić</h2>
                 <div style="padding-top: 0.5em">
                     <h3><span>Date of birth: </span> 03/03/1999</h3>
                     <h3><span>Address: </span> Ive Andrića 2, Obrež</h3>
                     <h3><span>Email: </span>lukicaleksa04@gmail.com</h3>
                     <h3><span>Telephone: </span> +381 69 695095</h3>
-                    <h3><span>Personal Github: </span><a style="color: #121212" href="https://github.com/luxal99">luxal99</a>
-                    </h3>
                 </div>
             </div>
             <div class="profile-image col">
                 <img
                         src="https://firebasestorage.googleapis.com/v0/b/soy-smile-249718.appspot.com/o/cv%2F88A4063E-566E-4D17-BD61-7B582EAB9766.png?alt=media&token=18ed6284-eba9-4508-bd9b-587c7fba299a"
-                        width="300px"
+                        width="150px"
                         alt=""
                 />
             </div>
         </div>
     </div>
     <div class="cv-content">
-        <div class="section profile-section">
-            <div class="label">
-                <h2>Summary</h2>
+        <div style="display: grid">
+            <div class="section profile-section">
+                <div class="label">
+                    <h2>Summary</h2>
+                </div>
+                <div class="content">
+                    <p class="bio">
+                        Experienced Web Developer passionate about crafting exceptional web solutions. A natural team
+                        player who thrives in objective-driven environments, fostering respect and embracing diverse
+                        perspectives. With a knack for selecting optimal over easy solutions, I tackle challenges
+                        head-on,
+                        conducting thorough research before implementing pivotal features. I take pride in taking
+                        responsibility and calculated risks, driving projects to new heights of success.
+                    </p>
+                </div>
             </div>
-            <div class="content">
-                <p class="bio">
-                    Experienced Web Developer passionate about crafting exceptional web solutions. A natural team
-                    player who thrives in objective-driven environments, fostering respect and embracing diverse
-                    perspectives. With a knack for selecting optimal over easy solutions, I tackle challenges head-on,
-                    conducting thorough research before implementing pivotal features. I take pride in taking
-                    responsibility and calculated risks, driving projects to new heights of success.
-                </p>
+            <div class="section profile-section">
+
+                <h4 style="margin: 0">Personal Touch</h4>
+                <div class="content">
+                    <p class="bio">
+                        Beyond programming, I find joy in fostering a positive atmosphere among friends and colleagues.
+                        My
+                        love for sports, including table tennis, basketball, and skiing, keeps me energized and focused.
+                        I
+                        firmly believe that enjoyment and a positive mindset fuel creativity and drive outstanding
+                        results.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="section profile-section">
-            <div class="label">
-                <h2>Personal Touch</h2>
-            </div>
-            <div class="content">
-                <p class="bio">
-                    Beyond programming, I find joy in fostering a positive atmosphere among friends and colleagues. My
-                    love for sports, including table tennis, basketball, and skiing, keeps me energized and focused. I
-                    firmly believe that enjoyment and a positive mindset fuel creativity and drive outstanding results.
-                </p>
-            </div>
-        </div>
-        <div class="section profile-section">
-            <div class="label">
-                <h2>Key Highlights</h2>
-            </div>
-            <div class="content">
-                <ul>
-                    <li>Extensive experience in designing and developing captivating web applications</li>
-                    <li>Passionate about continuous learning and growth, staying updated with the latest industry
-                        trends.
-                    </li>
-                    <li>Proactive problem solver, fearlessly choosing the best solutions, regardless of complexity, to
-                        achieve remarkable outcomes.
-                    </li>
-                    <li>Collaborative team player, valuing respect and open-mindedness, while driving collective
-                        success.
-                    </li>
-                </ul>
+            <div class="section profile-section">
+
+                <h4 style="margin: 0">Key Highlights</h4>
+                <div class="content">
+                    <ul>
+                        <li>Extensive experience in designing and developing captivating web applications</li>
+                        <li>Passionate about continuous learning and growth, staying updated with the latest industry
+                            trends.
+                        </li>
+                        <li>Proactive problem solver, fearlessly choosing the best solutions, regardless of complexity,
+                            to
+                            achieve remarkable outcomes.
+                        </li>
+                        <li>Collaborative team player, valuing respect and open-mindedness, while driving collective
+                            success.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="row" style="align-items: start">
@@ -294,7 +293,90 @@
 
                     </div>
                 </div>
+            </div>
+            <div class="col">
+                <div class="section profile-section">
+                    <div class="label">
+                        <h2>Skills</h2>
+                    </div>
+                   <div class="technologies">
+                       <div class="content">
+                           <h3 class="h3-silver">- Programming languages</h3>
 
+                           <div>
+                               <h3>Java</h3>
+                               <h3>Javascript</h3>
+                               <h3>Typescript</h3>
+                           </div>
+                       </div>
+                       <div class="content">
+                           <h3 class="h3-silver">- Technologies - with commercial experience</h3>
+
+                           <div>
+                               <h3>Angular</h3>
+                               <h3>React</h3>
+                               <h3>Next.js</h3>
+                               <h3>Storybook</h3>
+                               <h3>Node.js</h3>
+                               <h3>Nest.js</h3>
+                               <h3>TypeORM</h3>
+                           </div>
+                       </div>
+
+                       <div class="content">
+                           <h3 class="h3-silver">- Technologies - familiar with</h3>
+                           <div>
+                               <h3>SpringBoot</h3>
+                               <h3>JSP</h3>
+                               <h3>Hibernate</h3>
+                               <h3>Vue 3</h3>
+                           </div>
+                       </div>
+
+                       <div class="content">
+                           <h3 class="h3-silver">- Databases</h3>
+
+                           <div>
+                               <h3>MySql/Mariadb</h3>
+                               <h3>PostgreSQL</h3>
+                           </div>
+                       </div>
+
+                       <div class="content">
+                           <h3 class="h3-silver">- DevOps</h3>
+
+                           <div>
+                               <h3>Nginx</h3>
+                               <h3>Docker</h3>
+                           </div>
+                       </div>
+
+                       <div class="content">
+                           <h3 class="h3-silver">- UX/UI</h3>
+
+                           <div>
+                               <h3>Figma</h3>
+                           </div>
+                       </div>
+
+                       <div class="content">
+                           <h3 class="h3-silver">- OS</h3>
+
+                           <div>
+                               <h3>Linux</h3>
+                               <h3>Windows</h3>
+                           </div>
+                       </div>
+                       <div class="content">
+                           <h3 class="h3-silver">- Version Control</h3>
+
+                           <div>
+                               <h3>Git</h3>
+                               <h3>BitBucket</h3>
+                           </div>
+                       </div>
+                   </div>
+                </div>
                 <div class="section profile-section">
                     <div class="label">
                         <h2>Education</h2>
@@ -311,89 +393,6 @@
                             The course is intended for the professional study of processes
                             in software system development
                         </p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col">
-                <div class="section profile-section">
-                    <div class="label">
-                        <h2>Skills</h2>
-                    </div>
-                    <div class="content">
-                        <h3 class="h3-silver">- Programming languages</h3>
-
-                        <div>
-                            <h3>Java</h3>
-                            <h3>Javascript</h3>
-                            <h3>Typescript</h3>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3 class="h3-silver">- Technologies - with commercial experience</h3>
-
-                        <div>
-                            <h3>Angular</h3>
-                            <h3>React</h3>
-                            <h3>Next.js</h3>
-                            <h3>Storybook</h3>
-                            <h3>Node.js</h3>
-                            <h3>Nest.js</h3>
-                            <h3>TypeORM</h3>
-                        </div>
-                    </div>
-
-                    <div class="content">
-                        <h3 class="h3-silver">- Technologies - familiar with</h3>
-                        <div>
-                            <h3>SpringBoot</h3>
-                            <h3>JSP</h3>
-                            <h3>Hibernate</h3>
-                            <h3>Vue 3</h3>
-                        </div>
-                    </div>
-
-                    <div class="content">
-                        <h3 class="h3-silver">- Databases</h3>
-
-                        <div>
-                            <h3>MySql/Mariadb</h3>
-                            <h3>PostgreSQL</h3>
-                        </div>
-                    </div>
-
-                    <div class="content">
-                        <h3 class="h3-silver">- DevOps</h3>
-
-                        <div>
-                            <h3>Nginx</h3>
-                            <h3>Docker</h3>
-                        </div>
-                    </div>
-
-                    <div class="content">
-                        <h3 class="h3-silver">- UX/UI</h3>
-
-                        <div>
-                            <h3>Figma</h3>
-                        </div>
-                    </div>
-
-                    <div class="content">
-                        <h3 class="h3-silver">- OS</h3>
-
-                        <div>
-                            <h3>Linux</h3>
-                            <h3>Windows</h3>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3 class="h3-silver">- Version Control</h3>
-
-                        <div>
-                            <h3>Git</h3>
-                            <h3>BitBucket</h3>
-                        </div>
                     </div>
                 </div>
 
